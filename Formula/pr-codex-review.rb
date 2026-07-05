@@ -1,8 +1,8 @@
 class PrCodexReview < Formula
   desc "Run parallel Codex PR reviews and aggregate them into one GitHub comment"
   homepage "https://github.com/yungweng/pr-codex-review"
-  url "https://github.com/yungweng/pr-codex-review/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "cc4b82c8f3579b775c1dc544dbbe96ba984bbd6b66cdc30a8cd55efa0e06cd73"
+  url "https://github.com/yungweng/pr-codex-review/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "6e899aa873e91397054ba2890a8ee00b9efcd95aaba06ff5f7645617212b117c"
 
   depends_on "direnv"
   depends_on "gh"

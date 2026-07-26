@@ -1,8 +1,8 @@
 class Prbot < Formula
   desc "Run pr-codex-review automatically on GitHub PRs that request your review"
   homepage "https://github.com/yungweng/prbot"
-  url "https://github.com/yungweng/prbot/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "0b6f381ef8af5fb434f1bc02bf8b6d6b5b0e7901dbf799d300d7e53487605703"
+  url "https://github.com/yungweng/prbot/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "d336a081a98cda5da45654f5ef85da94d2d132c0360ce8e083ee086f2d56ffa6"
   license "MIT"
 
   depends_on "go" => :build

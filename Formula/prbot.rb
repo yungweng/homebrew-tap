@@ -5,12 +5,12 @@ class Prbot < Formula
   sha256 "0b6f381ef8af5fb434f1bc02bf8b6d6b5b0e7901dbf799d300d7e53487605703"
   license "MIT"
 
+  depends_on "go" => :build
   depends_on "gh"
-  depends_on "jq"
   depends_on "yungweng/tap/pr-codex-review"
 
   def install
-    bin.install "bin/prbot"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.Version=#{version}")
   end
 
   def caveats
@@ -23,13 +23,15 @@ class Prbot < Formula
       Then authenticate GitHub and start the agent:
         gh auth login
         prbot install
+        prbot setup
 
       Reviews are posted to your PRs automatically. To review without posting,
-      set REVIEW_ARGS="--dry-run" in ~/.config/prbot/config.
+      choose "keep them local" in prbot setup.
     EOS
   end
 
   test do
     assert_match "prbot install", shell_output("#{bin}/prbot --help")
+    assert_match version.to_s, shell_output("#{bin}/prbot --version")
   end
 end

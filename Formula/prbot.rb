@@ -5,7 +5,7 @@ class Prbot < Formula
   sha256 "d336a081a98cda5da45654f5ef85da94d2d132c0360ce8e083ee086f2d56ffa6"
   license "MIT"
 
-  deprecate! date: "2026-07-27", because: "prbot is now `quorum`, which also replaces pr-codex-review and babysit"
+  deprecate! date: "2026-07-27", because: "is now `quorum`, which also replaces pr-codex-review and babysit"
 
   depends_on "go" => :build
   depends_on "gh"

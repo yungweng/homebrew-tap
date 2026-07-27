@@ -4,7 +4,7 @@ class Babysit < Formula
   url "https://github.com/yungweng/babysit/archive/refs/tags/v0.6.0.tar.gz"
   sha256 "cf7945bee470d22bf67dad49b7bd41326bf26c1dfdedd49617d536a9910d7ce6"
 
-  deprecate! date: "2026-07-27", because: "babysit is now `quorum babysit`"
+  deprecate! date: "2026-07-27", because: "is now `quorum babysit`"
 
   depends_on "direnv"
   depends_on "gh"

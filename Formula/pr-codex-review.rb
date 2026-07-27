@@ -4,7 +4,7 @@ class PrCodexReview < Formula
   url "https://github.com/yungweng/pr-codex-review/archive/refs/tags/v1.6.0.tar.gz"
   sha256 "54bd7636dab1da2bdddd9861145d44fd9d475b5b16e420ecfd5c721a8af24ea6"
 
-  deprecate! date: "2026-07-27", because: "pr-codex-review is now `quorum review`"
+  deprecate! date: "2026-07-27", because: "is now `quorum review`"
 
   depends_on "direnv"
   depends_on "gh"

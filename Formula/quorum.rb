@@ -1,8 +1,8 @@
 class Quorum < Formula
   desc "Panel of Codex reviewers for your PRs: review, fix, wait for CI, repeat"
   homepage "https://github.com/yungweng/quorum"
-  url "https://github.com/yungweng/quorum/archive/refs/tags/v1.15.3.tar.gz"
-  sha256 "70d07dc7b2604edb2f740bc82f7cbc30d4b2c24ac63da933c70b0dbf501f47a4"
+  url "https://github.com/yungweng/quorum/archive/refs/tags/v1.15.4.tar.gz"
+  sha256 "afc8e3f5f43a93a407f5d38ce59c4c905ab517b7577c413aa2831f3bda740899"
   license "MIT"
 
   depends_on "go" => :build

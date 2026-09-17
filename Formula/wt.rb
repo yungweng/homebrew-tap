@@ -1,8 +1,8 @@
 class Wt < Formula
   desc "Create isolated, ready-to-code Git worktrees"
   homepage "https://github.com/yungweng/wt"
-  url "https://github.com/yungweng/wt/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "eb1fb8a6cd848047ac53102df02833f67f84c48cff2edabe9cf25cf58407f46b"
+  url "https://github.com/yungweng/wt/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "9a04e7f6615e4721d3b591334cdbe34289008308a93df0b81332f2120246294f"
   license "MIT"
 
   depends_on "rust" => :build
